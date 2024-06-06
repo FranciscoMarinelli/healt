@@ -1,3 +1,93 @@
+.healt h1 {
+  position: absolute;
+  top: 70px;
+  left: 45rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  flex-wrap: wrap;
+}
 
+.titulo-alimentos h1 {
+  text-align: center;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titulo-materiales {
+  text-align: center;
+}
+
+.titulo-head h1 {
+  background-color: skyblue;
+  text-align: center;
+}
+
+h1 {
+  color: red;
+}
+
+.container {
+  position: absolute;
+  margin-top: 270px;
+  font-size: 30px;
+}
+
+.footer-alimentos {
+  background-color: #9e947e;
+}
+.footer-alimentos .box-links {
+  margin-top: 350px;
+  width: 100%;
+  justify-items: center;
+  background-color: #aeaba6;
+  display: grid;
+  grid-template-rows: 70px 80px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "titulo titulo titulo" "carniceria verduleria dietetica";
+}
+.footer-alimentos .box-links .titulo-footer {
+  grid-area: titulo;
+}
+.footer-alimentos .box-links .titulo-footer h3 {
+  text-align: center;
+}
+.footer-alimentos .box-links .carniceria {
+  grid-area: carniceria;
+  text-align: center;
+}
+.footer-alimentos .box-links .verduleria {
+  grid-area: verduleria;
+}
+.footer-alimentos .box-links .dietetica {
+  grid-area: dietetica;
+}
+.footer-alimentos .box-links a {
+  color: black;
+  padding: 10px;
+  background-color: #708090;
+  border-radius: 30px;
+}
+.footer-alimentos img {
+  width: 100%;
+  height: 100px;
+  margin-top: 5px;
+}
+
+.footer-materiales {
+  position: relative;
+  bottom: -310px;
+  background-color: black;
+  height: 90px;
+}
+.footer-materiales p {
+  font-size: 60px;
+  text-align: center;
+}
+
+h1 {
+  color: red;
+}
 
 /*# sourceMappingURL=estilos.css.map */

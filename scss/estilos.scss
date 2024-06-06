@@ -1,0 +1,20 @@
+@import "./utilities/reset";
+@import "./utilities/variables";
+@import "./utilities/mixin";
+@import "./utilities/extend";
+@import "./utilities/global";
+
+
+
+@import "./components/header";
+@import "./pages/main-alimentos";
+@import "./pages/main-material";
+@import "./components/footer";
+
+
+@import "./utilities/media-querie";
+
+h1 {
+    color: red;
+}
+
