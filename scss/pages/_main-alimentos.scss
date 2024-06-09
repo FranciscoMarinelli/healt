@@ -1,3 +1,74 @@
-h1 {
-    color: red;
+
+.back-alimentos {
+    background-color: blanchedalmond;
+}
+
+
+
+.subtitulo-alimentos{
+    h2 {
+        text-align: center;
+    }
+}
+
+.items-alimentos {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40px 60px 200px 40px;
+    grid-template-areas:
+        "header header header"
+        "diversa vegana vegetariana"
+        "uno     dos    tres"
+        "agua   agua   agua";
+
+    .header {
+        grid-area: header;
+        background-color: #d1bc8a;
+        text-align: center;
+    }
+
+
+
+    .diversa {
+        grid-area: diversa;
+        background-color: #b8a473;
+    }
+
+
+    .vegana {
+        grid-area: vegana;
+        background-color: #c4b07e;
+    }
+
+
+    .vegetariana {
+        grid-area: vegetariana;
+        background-color: #dec896;
+    }
+
+
+    .uno {
+        grid-area: uno;
+        background-color: rgb(194, 193, 151);
+    }
+
+    .dos {
+        grid-area: dos;
+        background-color: rgb(171, 179, 155);
+    }
+
+
+    .tres {
+        grid-area: tres;
+        background-color: #cfd8ad;
+    }
+
+
+    .agua {
+        text-align: center;
+        background-color: #a0ae75;
+        grid-area: agua;
+    }
 }
