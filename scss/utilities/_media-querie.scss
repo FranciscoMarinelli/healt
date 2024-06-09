@@ -1,0 +1,78 @@
+@media screen and (max-width:768px) {
+
+
+    .back-alimentos {
+        background-color: $crema;
+    }
+
+    .titulo-alimentos {
+        h1 {
+            text-align: center;
+            font-family: $tipografia-alimentos;
+            font-weight: 200;
+            font-style: normal;
+        }
+    }
+
+    .subtitulo-alimentos {
+        h2 {
+            text-align: center;
+        }
+    }
+
+
+    .items-alimentos {
+        display: grid;
+        position: absolute;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 30px 40px 200px 30px 40px 200px 30px 40px 200px 30px;
+        grid-template-areas:
+            "header header header"
+            "diversa diversa diversa "
+            "uno    uno   uno  "
+            "header header header"
+            "vegana vegana vegana"
+            "dos    dos      dos"
+            "header header header"
+            "vegetariana vegetariana vegetariana"
+            "tres         tres       tres"
+            "agua   agua   agua";
+    }
+
+
+    .footer-alimentos {
+
+
+        .box-links {
+
+            margin-top: 350px;
+            width: 100%;
+            justify-items: center;
+            background-color: $gris-claro;
+            display: grid;
+            grid-template-rows: 90px 110px;
+            grid-template-columns: repeat (3, 1fr);
+            grid-template-areas:
+                "titulo titulo titulo"
+                "carniceria verduleria dietetica";
+        }
+
+        img {
+            width: 768px;
+            height: 100px;
+            margin-top: 5px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .footer-materiales {
+        p {
+            font-size: 50px;
+            text-align: center;
+            }
+    }
+}
