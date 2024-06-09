@@ -1,6 +1,6 @@
 
 .back-alimentos {
-    background-color: blanchedalmond;
+    background-color: $crema;
 }
 
 
@@ -25,7 +25,7 @@
 
     .header {
         grid-area: header;
-        background-color: #d1bc8a;
+        background-color:$marron-claro;
         text-align: center;
     }
 
@@ -33,42 +33,42 @@
 
     .diversa {
         grid-area: diversa;
-        background-color: #b8a473;
+        background-color:$anaranjado;
     }
 
 
     .vegana {
         grid-area: vegana;
-        background-color: #c4b07e;
+        background-color: $marron-medio;
     }
 
 
     .vegetariana {
         grid-area: vegetariana;
-        background-color: #dec896;
+        background-color:$crema-oscuro;
     }
 
 
     .uno {
         grid-area: uno;
-        background-color: rgb(194, 193, 151);
+        background-color: $amarillo-claro;
     }
 
     .dos {
         grid-area: dos;
-        background-color: rgb(171, 179, 155);
+        background-color:$gris-apagado;
     }
 
 
     .tres {
         grid-area: tres;
-        background-color: #cfd8ad;
+        background-color: $amarillo-apagado;
     }
 
 
     .agua {
         text-align: center;
-        background-color: #a0ae75;
+        background-color:$verde-gris;
         grid-area: agua;
     }
 }

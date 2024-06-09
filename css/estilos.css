@@ -5,7 +5,7 @@ a {
 }
 
 .healt h1 {
-  position: absolute;
+  position: relative;
   top: 70px;
   left: 45rem;
   font-family: "bebas Neue", sans-serif;
@@ -94,14 +94,30 @@ a {
   height: 300px;
 }
 
+.backindex {
+  background-color: #708090;
+}
+
+.row {
+  position: relative;
+  top: 90px;
+  left: 170px;
+  gap: 30px;
+}
+
+.backhead {
+  background-color: rgba(132, 215, 248, 0.671);
+}
+
 .container {
-  position: absolute;
-  margin-top: 270px;
+  position: relative;
   font-size: 30px;
 }
 
 .footer-alimentos {
   background-color: #9e947e;
+  position: relative;
+  top: 50px;
 }
 .footer-alimentos .box-links {
   margin-top: 350px;
@@ -134,11 +150,6 @@ a {
   padding: 10px;
   background-color: #708090;
   border-radius: 30px;
-}
-.footer-alimentos img {
-  width: 100%;
-  height: 100px;
-  margin-top: 5px;
 }
 
 .footer-materiales {
@@ -203,9 +214,6 @@ a {
     font-size: 50px;
     text-align: center;
   }
-}
-h1 {
-  color: red;
 }
 
 /*# sourceMappingURL=estilos.css.map */
