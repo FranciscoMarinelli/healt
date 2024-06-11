@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 a {
   text-decoration: none;
 }
@@ -28,6 +29,15 @@ a {
 .titulo-head h1 {
   background-color: skyblue;
   text-align: center;
+}
+
+.header-personal h1 {
+  text-align: center;
+}
+.header-personal h1 .bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .back-alimentos {
@@ -107,6 +117,11 @@ a {
 
 .backhead {
   background-color: rgba(132, 215, 248, 0.671);
+}
+
+.carousel {
+  position: relative;
+  top: 60px;
 }
 
 .container {
