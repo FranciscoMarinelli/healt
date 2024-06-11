@@ -5,6 +5,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 .healt h1 {
   position: relative;
   top: 70px;
@@ -15,6 +19,14 @@ a {
   flex-wrap: wrap;
 }
 
+.titulo-alimentos .navbar-alimentos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #a0ae75;
+  padding: 40px;
+  border-radius: 30px;
+}
 .titulo-alimentos h1 {
   text-align: center;
   font-family: "Poetsen One", sans-serif;
@@ -22,20 +34,44 @@ a {
   font-style: normal;
 }
 
-.titulo-materiales {
+.titulo-materiales .navbar-material {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: violet;
+  border-radius: 30px;
+}
+.titulo-materiales h1 {
   text-align: center;
 }
 
+.titulo-head .navbar-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(172, 172, 237);
+  padding: 30px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
 .titulo-head h1 {
   background-color: skyblue;
   text-align: center;
 }
 
+.header-personal .navbar-personal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: black;
+  padding: 40px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
 .header-personal h1 {
   text-align: center;
-}
-.header-personal h1 .bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  font-family: "Poetsen One", sans-serif;
   font-weight: 400;
   font-style: normal;
 }

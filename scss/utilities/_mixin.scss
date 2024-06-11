@@ -1,0 +1,6 @@
+@mixin flex ($wrap,$justify-c,$b-color){
+    display: flex;
+    flex-wrap: $wrap;
+    justify-content: $justify-c;
+    background-color: $b-color;
+}
