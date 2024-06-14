@@ -38,8 +38,10 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: violet;
+  background-color: skyblue;
+  padding: 30px;
   border-radius: 30px;
+  margin-top: 10px;
 }
 .titulo-materiales h1 {
   text-align: center;
@@ -127,17 +129,50 @@ li {
   grid-area: agua;
 }
 
-.backmateriales {
-  background-image: url(../contenido/imagenes/back-material.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+.cuadro {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-
-.loop video {
-  width: 100%;
-  height: 300px;
+.cuadro .primera {
+  flex-direction: column;
+}
+.cuadro .primera .one {
+  background-color: aquamarine;
+  padding-bottom: 40px;
+}
+.cuadro .primera .one .especialistas {
+  background-color: aliceblue;
+  text-align: center;
+}
+.cuadro .primera .two {
+  background-color: aquamarine;
+  padding-bottom: 50px;
+}
+.cuadro .primera .two .experiencia {
+  background-color: aliceblue;
+  text-align: center;
+}
+.cuadro .segunda {
+  flex-direction: column;
+}
+.cuadro .segunda .three {
+  background-color: aquamarine;
+  padding-bottom: 50px;
+}
+.cuadro .segunda .three .dietas {
+  background-color: aliceblue;
+  text-align: center;
+}
+.cuadro .segunda .four {
+  background-color: aquamarine;
+  padding-bottom: 50px;
+}
+.cuadro .segunda .four .atencion {
+  background-color: aliceblue;
+  text-align: center;
 }
 
 .backindex {
@@ -155,9 +190,18 @@ li {
   background-color: rgba(132, 215, 248, 0.671);
 }
 
+.row {
+  position: relative;
+  display: flex;
+  right: 500px;
+}
+
 .carousel {
   position: relative;
-  top: 60px;
+  top: 30px;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-bottom: 70px;
 }
 
 .container {
@@ -190,10 +234,10 @@ li {
   grid-area: carniceria;
   text-align: center;
 }
-.footer-alimentos .box-links .verduleria {
+.footer-alimentos .box-links {
   grid-area: verduleria;
 }
-.footer-alimentos .box-links .dietetica {
+.footer-alimentos .box-links {
   grid-area: dietetica;
 }
 .footer-alimentos .box-links a {
@@ -204,14 +248,17 @@ li {
 }
 
 .footer-materiales {
-  position: relative;
-  bottom: -310px;
-  background-color: black;
-  height: 90px;
+  background-color: #708090;
+  margin-top: 20px;
+  font-size: 20px;
 }
-.footer-materiales p {
-  font-size: 60px;
+.footer-materiales .lore {
+  height: 50px;
+  transition: height 2s;
   text-align: center;
+}
+.footer-materiales .lore:hover {
+  height: 150px;
 }
 
 .footer-head {
@@ -223,14 +270,39 @@ li {
   text-align: center;
 }
 
+.footer-personal {
+  background-color: #d1bc8a;
+  height: 120px;
+}
+.footer-personal p {
+  text-align: center;
+}
+.footer-personal .ig {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-personal .ig a {
+  background-color: #708090;
+  border-radius: 20px;
+  color: black;
+}
+
 @media screen and (max-width: 768px) {
   .back-alimentos {
     background-color: blanchedalmond;
   }
+  .titulo-alimentos .navbar-alimentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #a0ae75;
+    padding: 40px;
+    border-radius: 30px;
+  }
   .titulo-alimentos h1 {
     text-align: center;
     font-family: "Poetsen One", sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     font-style: normal;
   }
   .subtitulo-alimentos h2 {
@@ -261,9 +333,117 @@ li {
   }
 }
 @media screen and (max-width: 768px) {
-  .footer-materiales p {
-    font-size: 50px;
+  .navbar-material {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: skyblue;
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 10px;
+  }
+  h1 {
     text-align: center;
+  }
+  .cuadro {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cuadro .primera {
+    flex-direction: column;
+  }
+  .cuadro .primera .one {
+    background-color: aquamarine;
+    padding-bottom: 40px;
+  }
+  .cuadro .primera .one .especialistas {
+    background-color: aliceblue;
+    text-align: center;
+  }
+  .cuadro .primera .two {
+    background-color: aquamarine;
+    padding-bottom: 50px;
+  }
+  .cuadro .primera .two .experiencia {
+    background-color: aliceblue;
+    text-align: center;
+  }
+  .cuadro .segunda {
+    flex-direction: column;
+  }
+  .cuadro .segunda .three {
+    background-color: aquamarine;
+    padding-bottom: 50px;
+  }
+  .cuadro .segunda .three .dietas {
+    background-color: aliceblue;
+    text-align: center;
+  }
+  .cuadro .segunda .four {
+    background-color: aquamarine;
+    padding-bottom: 50px;
+  }
+  .cuadro .segunda .four .atencion {
+    background-color: aliceblue;
+    text-align: center;
+  }
+  .cuadro .footer-materiales {
+    background-color: #708090;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .cuadro .footer-materiales .lore {
+    height: 50px;
+    transition: height 2s;
+    text-align: center;
+  }
+  .cuadro .footer-materiales .lore:hover {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-personal .navbar-personal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    padding: 40px;
+    border-radius: 30px;
+    margin-top: 10px;
+  }
+  .header-personal h1 {
+    text-align: center;
+    text-align: center;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .carousel {
+    position: relative;
+    flex-wrap: wrap;
+    top: 30px;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-bottom: 70px;
+  }
+  .footer-personal {
+    background-color: #d1bc8a;
+    height: 100px;
+  }
+  .footer-personal p {
+    text-align: center;
+  }
+  .footer-personal .ig {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-personal .ig a {
+    background-color: #708090;
+    border-radius: 20px;
+    color: black;
   }
 }
 

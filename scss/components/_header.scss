@@ -34,8 +34,11 @@
 .titulo-materiales {
 
     .navbar-material {
-        @include flex (wrap, space-around, violet);
+        @include flex (wrap, space-around, skyblue);
+        padding: 30px;
         border-radius: 30px;
+        margin-top: 10px;
+
 
     }
 
@@ -82,3 +85,5 @@
         font-style: normal;
     }
 }
+
+

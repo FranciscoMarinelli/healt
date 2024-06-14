@@ -6,14 +6,24 @@
     }
 
     .titulo-alimentos {
+
+        .navbar-alimentos {
+            @include flex (wrap, space-around, #a0ae75);
+            padding: 40px;
+            border-radius: 30px;
+    
+        }
+    
+    
+    
         h1 {
             text-align: center;
             font-family: $tipografia-alimentos;
-            font-weight: 200;
+            font-weight: 400;
             font-style: normal;
         }
     }
-
+    
     .subtitulo-alimentos {
         h2 {
             text-align: center;
@@ -69,10 +79,161 @@
 
 
 @media screen and (max-width:768px) {
-    .footer-materiales {
-        p {
-            font-size: 50px;
+    .navbar-material {
+        @include flex (wrap, space-around, skyblue);
+        padding: 30px;
+        border-radius: 30px;
+        margin-top: 10px;
+
+
+    }
+
+
+    h1 {
+        text-align: center;
+    }
+
+    .cuadro {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    
+    
+    
+        .primera {
+            flex-direction: column;
+    
+            .one {
+                background-color: aquamarine;
+                padding-bottom: 40px;
+               
+    
+                .especialistas {
+                    background-color: aliceblue;
+                    text-align: center;
+                }
+            }
+    
+            .two {
+                background-color: aquamarine;
+                padding-bottom: 50px;
+                .experiencia {
+                    background-color: aliceblue;
+                    text-align: center;
+                }
+            }
+        }
+    
+    
+    
+        .segunda {
+            flex-direction: column;
+    
+            .three {
+                background-color: aquamarine;
+                padding-bottom:50px;
+                .dietas {
+                    background-color: aliceblue;
+                    text-align: center;
+                }
+    
+            }
+    
+            .four {
+                background-color: aquamarine;
+                padding-bottom: 50px;
+                .atencion {
+                    background-color: aliceblue;
+                    text-align: center;
+                }
+            }
+        }
+    
+    
+        .footer-materiales {
+            background-color: $gris;
+            margin-top: 20px;
+        font-size: 20px;
+        
+        
+        
+            .lore {
+                height: 50px;
+                transition: height 2s;
+                text-align: center;
+        
+                &:hover {
+                    height: 150px;
+                }
+            }
+        
+        }
+        
+        
+            
+    
+    
+    
+    }
+
+
+}
+
+
+
+@media screen and (max-width:768px) {
+    .header-personal {
+
+        .navbar-personal {
+            @include flex (wrap, space-around, black);
+            padding: 40px;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+    
+    
+        h1 {
             text-align: center;
+    
+            text-align: center;
+            font-family: $tipografia-alimentos;
+            font-weight: 400;
+            font-style: normal;
         }
     }
+
+
+
+    .carousel {
+        position: relative;
+        flex-wrap: wrap;
+        top: 30px;
+        margin-right: 60px;
+        margin-left: 60px;
+        margin-bottom: 70px
+    }
+
+
+    .footer-personal {
+        background-color: $marron-claro;
+        height: 100px;
+    
+        p {
+            text-align: center;
+        }
+    
+        .ig {
+            display: flex;
+            justify-content: space-around;
+    
+            a {
+                background-color: $gris;
+                border-radius: 20px;
+                color: $negro;
+            }
+        }
+    }
+
 }

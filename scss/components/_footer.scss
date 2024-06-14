@@ -46,12 +46,12 @@
             text-align: center;
         }
 
-        .verduleria {
+        & {
             grid-area: verduleria;
 
         }
 
-        .dietetica {
+        & {
             grid-area: dietetica;
 
         }
@@ -73,16 +73,24 @@
 
 
 .footer-materiales {
-    position: relative;
-    bottom: -310px;
-    background-color: $negro;
-    height: 90px;
+    background-color: $gris;
+    margin-top: 20px;
+font-size: 20px;
 
 
-    p {
-        font-size: 60px;
+
+    .lore {
+        height: 50px;
+        transition: height 2s;
         text-align: center;
+
+        &:hover {
+            height: 150px;
+        }
     }
+
+
+
 
 
 }
@@ -97,4 +105,29 @@
     font-size: 70px;
     height: 120px;
     text-align: center;
+}
+
+
+
+
+
+
+.footer-personal {
+    background-color: $marron-claro;
+    height: 120px;
+
+    p {
+        text-align: center;
+    }
+
+    .ig {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            background-color: $gris;
+            border-radius: 20px;
+            color: $negro;
+        }
+    }
 }
