@@ -7,12 +7,58 @@
 
 
 
-.row {
-    position: relative;
+.inicio {
+   position: relative;
+    display: flex;
+    flex-direction: column;
     top: 90px;
-    left: 170px;
-    gap: 30px;
-   
+    width: 631px;
+    height: 500px;
+    margin-left: 450px;
 
+    h3 {
+        text-align: center;
+    }
+   
+     .d1 {
+        border: solid 2px $negro;
+        &:hover {
+            background-color: $gris-claro;
+            transition: all 2s;
+        }
+            
+
+        
+     }
+
+     .d2 {
+        border: solid 2px $negro;
+        margin-top: 30px;
+        &:hover {
+            background-color: $gris-claro;
+            transition: all 2s;
+        }
+     }
+
+     .d3 {
+        border: solid 2px $negro;
+        margin-top: 30px;
+        img {
+            width: 630px;
+        }
+        &:hover {
+            background-color: $gris-claro;
+            transition: all 2s;
+        }
+     }
+
+     .d4 {
+        border: solid 2px $negro;
+        margin-top: 30px;
+        &:hover {
+            background-color: $gris-claro;
+            transition: all 2s;
+        }
+     }
 
 }
