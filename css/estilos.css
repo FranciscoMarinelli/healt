@@ -9,6 +9,9 @@ li {
   list-style: none;
 }
 
+.healt {
+  flex-wrap: wrap;
+}
 .healt h1 {
   position: relative;
   top: 70px;
@@ -16,7 +19,6 @@ li {
   font-family: "bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-  flex-wrap: wrap;
 }
 
 .titulo-alimentos .navbar-alimentos {
@@ -188,6 +190,9 @@ li {
   height: 500px;
   margin-left: 450px;
 }
+.inicio img {
+  width: 627px;
+}
 .inicio h3 {
   text-align: center;
 }
@@ -206,12 +211,12 @@ li {
   background-color: #aeaba6;
   transition: all 2s;
 }
+.inicio .d2 img {
+  width: 629px;
+}
 .inicio .d3 {
   border: solid 2px black;
   margin-top: 30px;
-}
-.inicio .d3 img {
-  width: 630px;
 }
 .inicio .d3:hover {
   background-color: #aeaba6;
@@ -230,6 +235,16 @@ li {
   background-color: rgba(132, 215, 248, 0.671);
 }
 
+.main-head {
+  position: relative;
+  left: 230px;
+  width: 70%;
+  height: 900px;
+}
+.main-head p {
+  font-size: 20px;
+}
+
 .carousel {
   position: relative;
   flex-wrap: wrap;
@@ -239,14 +254,28 @@ li {
   margin-bottom: 70px;
 }
 
-.container {
+.footer-index {
   position: relative;
-  top: 870px;
-  margin-left: 130px;
-  font-size: 30px;
+  top: 1800px;
+  border: double;
+  flex-wrap: wrap;
 }
-.container h3 {
+.footer-index h4 {
   text-align: center;
+  margin-bottom: 15px;
+}
+.footer-index .items {
+  text-align: center;
+}
+.footer-index .items a {
+  font-size: 30px;
+  margin: 40px;
+}
+.footer-index .items a:hover {
+  background-color: #aeaba6;
+  border-radius: 100%;
+  padding: 5px;
+  transition: all 2s;
 }
 
 .footer-alimentos {
@@ -303,11 +332,20 @@ li {
 
 .footer-head {
   position: relative;
-  bottom: -540px;
-  background-color: rgb(172, 172, 237);
-  font-size: 70px;
-  height: 120px;
+  height: 150px;
+  bottom: 200px;
   text-align: center;
+  border: dashed;
+}
+.footer-head h3 {
+  font-family: "Poetsen One", sans-serif;
+}
+.footer-head form label {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.footer-head form input:hover {
+  box-shadow: 2px 2px rgb(172, 172, 237) inset;
 }
 
 .footer-personal {

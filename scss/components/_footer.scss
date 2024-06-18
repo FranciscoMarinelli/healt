@@ -1,17 +1,33 @@
-.container {
+.footer-index {
     position: relative;
-    top: 870px;
-    margin-left: 130px;
-    font-size: 30px;
-    h3 {
+    top: 1800px;
+    border: double;
+    flex-wrap: wrap;
+
+    h4 {
         text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .items {
+
+        text-align: center;
+
+        a {
+            font-size: 30px;
+            margin: 40px;
+
+            &:hover {
+                background-color: $gris-claro;
+                border-radius: 100%;
+                padding: 5px;
+                transition: all 2s;
+            }
+
+        }
+
     }
 }
-
-
-
-
-
 
 
 .footer-alimentos {
@@ -104,11 +120,33 @@
 
 .footer-head {
     position: relative;
-    bottom: -540px;
-    background-color: $lila;
-    font-size: 70px;
-    height: 120px;
+    height: 150px;
+    bottom: 200px;
     text-align: center;
+    border: dashed;
+
+    
+
+    h3 {
+        font-family: $tipografia-alimentos;
+    }
+
+
+    form {
+    
+        label {
+            font-size: 20px;
+            margin-right: 10px;
+    
+        }
+    
+        input:hover {
+    
+            box-shadow: 2px 2px $lila inset;
+            
+    
+        }
+    }
 }
 
 
