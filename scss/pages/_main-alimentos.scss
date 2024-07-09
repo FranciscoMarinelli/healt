@@ -14,6 +14,7 @@
 .items-alimentos {
     display: grid;
     position: absolute;
+    flex-wrap: wrap;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 40px 60px 200px 40px;
@@ -71,4 +72,9 @@
         background-color:$verde-gris;
         grid-area: agua;
     }
+}
+
+
+.dieta-oculta {
+    display: none;
 }

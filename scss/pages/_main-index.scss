@@ -1,23 +1,41 @@
 .backindex {
     background-color: $gris;
+    overflow-x: hidden;
+    
 }
 
 
-
+.healt {
+    flex-wrap: wrap;
+    
+      h1 {
+          position: relative;
+          top: 40px;
+          left: 730px;
+          font-family: $tipogafia-index;
+          font-weight: 400;
+          font-style: normal;
+          
+  
+      }
+  }
 
 
 
 .inicio {
    position: relative;
-    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     top: 90px;
     width: 631px;
     height: 500px;
-    margin-left: 450px;
+    left: 450px;
+
+   
 
     img {
         width: 627px;
+        z-index: -1;
     }
 
     h3 {
@@ -66,5 +84,7 @@
             transition: all 2s;
         }
      }
+
+   
 
 }
